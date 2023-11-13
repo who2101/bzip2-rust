@@ -16,7 +16,7 @@ fn compress_file(file_path: &str) {
 }
 
 fn main() {
-    let dir_path = "."; // текущая директория
+    let dir_path = ".";
     let entries = fs::read_dir(dir_path).expect("Unable to read directory");
 
     let handles: Vec<_> = entries
