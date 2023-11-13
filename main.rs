@@ -16,8 +16,7 @@ fn compress_file(file_path: &str) {
 }
 
 fn main() {
-    let dir_path = ".";
-    let entries = fs::read_dir(dir_path).expect("Unable to read directory");
+    let entries = fs::read_dir(".");
 
     let handles: Vec<_> = entries
         .filter_map(|entry| {
